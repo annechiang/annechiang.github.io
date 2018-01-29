@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>電腦版平板版手機版練習</title>
+	<link rel="stylesheet" href="">
+	<style>
+	*{
+		border: solid 1px;
+		box-sizing: border-box;
+	}
+	.container{
+		max-width: 1200px;
+		position: relative;
+		margin: 0 auto;
+		font-size: 0px;
+		background-color: lightgray;
+	}
+	.header{
+		width: 100%;
+		height: 100px;
+		position: relative;
+		background-color: gray;
+	}
+	.content{
+		width: 100%;
+		height: 600px;
+	}
+	.contentL{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	.contentR{
+		width: 50%;
+		height: 100%;
+		float: right;
+	}
+	.block{
+	    width: 50%;
+		height: 50%;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+	.logo{
+		width: 100px;
+		height: 100px;
+		float: left;
+		position: absolute;
+	}
+	.btn{
+		width: 60px;
+		height: 50px;
+		display: inline-block;
+		box-sizing: border-box;
+		float: right;
+		top: 50px;
+		position: relative;
+	}
+	.contentL, .block{
+		background-color: lightgray;
+		
+	}
+	@media  screen and (max-width:1200px) {
+		.contentL,.contentR{
+			width: 100%;
+	}		
+	}
+	@media  screen and (max-width:767px){
+		.block{
+			width: 100%;
+	}
+	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo"></div>
+			<div class="btn"></div>
+			<div class="btn"></div>
+			<div class="btn"></div>
+		</div>
+		<div class="content">
+			<div class="contentL">A</div>
+			<div class="contentR">
+				<div class="block">B</div>
+				<div class="block">C</div>
+				<div class="block">D</div>
+				<div class="block">E</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

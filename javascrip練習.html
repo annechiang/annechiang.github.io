@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascrip練習</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <style>
+    .box{
+        width:100px;
+        height:100px;
+        background-color:brown;
+    }
+    .red_box{
+        background-color:red;
+    }
+    .blue_box{
+        background-color:blue;
+    }
+    </style>
+</head>
+<body>
+    <i class="fas fa-bars"></i>
+    <button onclick="on()"> on </button>
+    <button onclick="off()"> off </button>
+    <button onclick="check()"> check </button>
+    <div class="box" id="box1"></div>
+    <script> 
+        function on(){
+           var box1=document.getElementById("box1")
+           box1.style.backgroundColor="blue";
+           box1.classList.add("red_box")
+           console.log(box1)
+        }
+        function off(){
+           var box1=document.getElementById("box1")
+           box1.style.backgroundColor="red";
+        } 
+        function check(){
+           var box1=document.getElementById("box1")
+           box1.style.backgroundColor="blue";          
+           box1.classList.toggle("blue_box")
+           console.log(box1)
+        }        
+    </script>
+    
+</body>
+</html>

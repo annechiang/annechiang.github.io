@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>小卡片練習</title>
+	<link rel="stylesheet" href="">
+	<style>
+		*{
+		  box-sizing: border-box;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+		.card{
+			border: solid 1px black;
+			width: 800px;
+			height: 600px;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 15px;
+			overflow: hidden;
+		}
+		.left{
+			width: 30%;
+			height: 100%;
+			float: left;
+			background-image: url('img/流水.PNG');
+			background-size: cover;
+		}
+		.right{
+			width: 70%;
+			height: 100%;
+			float: right;
+			padding: 10px;
+		}
+		li{
+			margin-left: 30px;
+			list-style: none;
+			display: inline-block;
+			padding: 10px 10px;	
+			background-color: yellowgreen;
+		}
+		.smalltitle{
+			font-size: 30px;
+			color: yellowgreen;
+			letter-spacing: 5px;
+			float: right;
+		}
+		p{
+			font-family: 微軟正黑體 ;
+			letter-spacing: 5px;
+			line-height: 25px;
+		}
+		h2{
+            color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="left"></div>
+		<div class="right">
+		    <h1 class="title">草嶺古道<span class="smalltitle">詩意悠遊在小徑中</span></h1>
+		    <p>草嶺古道，是一條連接台灣新北市貢寮區遠望坑與宜蘭縣頭城鎮大里山區的步道。屬古代淡蘭古道北路一部分，亦為目前僅存的路段之一。 「草嶺」之名得自海拔較高處道旁山嶺芒草生長茂盛，幾乎不存其餘樹種。古道長約8.5公里，途中有雄鎮蠻煙碑、虎字碑等古蹟，於埡口及宜蘭縣部分可遠望龜山島。</p>
+		    <h2>芒草季</h2>
+		    <p>2017草嶺古道芒花季今年已邁入第16屆，本活動從2002年開始舉辦，並以「歷史藝文、環教生態、健行養生」為主要訴求，希望藉此活動「結合地方產業」，提倡正當休閒活動，帶領遊客踏上擁有兩百年歷史的古道，感受古道秋芒美麗的印記。</p>
+		    <h2>景點介紹</h2>
+		    <ul>
+		    	<li>仙跡岩</li>
+		    	<li>虎字碑</li>
+		    	<li>福德祠</li>
+		    	<li>天公廟</li>
+		    </ul>
+		</div>
+	</div>
+	
+</body>
+</html>

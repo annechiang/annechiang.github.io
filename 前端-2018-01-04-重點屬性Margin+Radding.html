@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Docoment</title>
+	<link rel="stylesheet" href="">
+	<style>
+	body {
+		background-color: black;
+        margin: 0;
+	}
+	div{
+		font-size: 30px;
+		font-weight: bolder;
+		color: white;
+	}
+	#contentR div {
+		color: blue;
+	}
+	#container{
+		height: 780px;
+        width: 580px;
+        background-color: black;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	#header{
+        height: 110px;
+        width: 580px;
+        background-color: gray;
+        margin-bottom: 10px;
+	}
+	#content{
+        height: 580px;
+        width: 580px;
+        background-color: black;
+        margin-bottom: 10px;		
+	}
+	#contentL{
+		height: 580px;
+        width: 170px;
+        background-color: gray;
+        float: left; 
+	}
+	#contentR{
+		height: 580px;
+        width: 400px;
+        background-color: black ;
+        float: right;
+	}
+	#contentRup{
+		height: 200px;
+        width: 400px;
+        background-color: gray;
+        margin-bottom: 10px;
+	}
+	#contentRmid{
+		height: 160px;
+        width: 400px;
+        background-color: black;
+        margin-bottom: 10px;
+	}
+    #contentRmidL{
+		height: 160px;
+        width: 195px;
+        background-color: red;
+        float: left;
+	}
+	 #contentRmidR{
+		height: 160px;
+        width: 195px;
+        background-color: yellow;
+        float: right; 
+	}
+	#contentRdown{
+		height: 200px;
+        width: 400px;
+        background-color: gray;
+	}
+	#footer{
+	    height: 70px;
+        width: 580px;
+        background-color: blue;		
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">id header內容放這裡</div>
+		<div id="content">
+			<div id="contentL">id contentL內容放這裡</div>
+			<div id="contentR">
+				<div id="contentRup">id contentRup內容放這裡</div>
+				<div id="contentRmid">
+					<div id="contentRmidL">id contentRmidL內容放這裡</div>
+					<div id="contentRmidR">id contentRmidR內容放這裡</div>
+				</div>
+				<div id="contentRdown">id contentRdown內容放這裡</div>
+			</div>
+		</div>
+		<div id="footer">id footer內容放這裡</div>
+	</div>
+</body>
+</html>
